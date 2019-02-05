@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Animal Buttons</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
-    <style type="text/css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Quench</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
-
-    </style>
 </head>
 
 <body>
@@ -108,6 +113,34 @@
 
             //     })
             // });
+            </script>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Lunch n' Learn</h1>
+      <p class="lead">Fortune cookies for the Crypto Investor</p>
+    </div>
+  </div>
+
+  <div id='logInContainer'>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <button type="submit" id='submitButton' class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- "Page 2" Begins! -->
+  <div id='page2Container'>
+
+    <input id="zipCodeInput" class="form-control form-control-lg" type="text" placeholder="Enter Your Zipcode!">
+    <button type="submit" id='submitButton2' class="btn btn-primary">Submit</button>
+
+
+  </div>
 
 
 
@@ -115,8 +148,8 @@
 
 
 
-
-    </script>
+  <script src="assets/javascript/main.js"></script>
+  
 </body>
 
 </html>
