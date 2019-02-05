@@ -21,6 +21,13 @@ margin: auto;
     text-align: center;
 }
 
+#image {
+    padding: 5px;
+    margin-left: 42%;
+}
+   
+    
+
 #page3Container {
     width: 325px;
     margin-left: 25px;
