@@ -14,6 +14,7 @@ $(document).ready(function () {
     storageBucket: "ucla-example-8388c.appspot.com",
     messagingSenderId: "1069772039049"
   };
+  
   firebase.initializeApp(config);
 
   var database = firebase.database();
@@ -68,17 +69,14 @@ $(document).ready(function () {
 
 
         });//end of second ajax request
-  }
+  });//end of second ajax request
 
 
-    });//end of second ajax request
-
-
-  });//end on click button2
+  //end on click button2
 
 
 
-  $('.restaurant').on('click', function () {
+  // $('#hi').on('click', function () {
 
     var a = Math.floor(Math.random() * 1500);
     var corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
@@ -106,7 +104,7 @@ $(document).ready(function () {
 
     });
 
-  });
+  // });
 
 
 
