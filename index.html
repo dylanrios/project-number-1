@@ -9,111 +9,19 @@
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
-  
+
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-    <div class="card" style="width: 18rem;">
-        <img id="image" src="" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a id= "hi" href="" class="btn btn-primary">Invest!</a>
-        </div>
-    </div>
+  
 
 
 
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        var a = Math.floor(Math.random() * 1500);
-        var corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
-        var queryURL = corsAnywhereUrl + "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info?id=" + a + "&CMC_PRO_API_KEY=e086943b-ef20-40d5-8fb0-bfbcb7bbbd53";
-
-
-
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-            console.log(response);
-            // var results = response.data;
-            console.log(response.data[a]);
-
-            var loga = response.data[a].logo;
-            
-
-            $("#image").attr("src",loga);
-            $(".card-title").text(response.data[a].name)
-            $(".card-text").text(response.data[a].symbol)
-            $("#hi").attr("src",response.data[a].urls.website);
-            console.log(response.data[a].urls.website)
-
-
-        });
-
-         
-
-
-
-            // //    https://pro-api.coinmarketcap.com
-
-            // $(document).on("click", ".animals", function () {
-            //     var choice = this.value
-            //     console.log(choice);
-
-            //     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-            //         choice + "&api_key=dc6zaTOxFJmzC&limit=10";
-
-            //     $.ajax({
-            //         url: queryURL,
-            //         method: "GET"
-            //     }).then(function (response) {
-            //         console.log(response);
-            //         var results = response.data;
-            //         var dataAnimate
-            //         var dataStill
-
-
-
-
-
-            //         $(document).on("click", ".image", function () {
-            //             // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-
-            //             var state = $(this).attr("data-state");
-            //             console.log($(this).attr("data-still"));
-            //             // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-            //             // Then, set the image's data-state to animate
-            //             // Else set src to the data-still value
-            //             if (state === "animate") {
-            //                 $(this).attr("src", $(this).attr("data-still"));
-            //                 $(this).attr("data-state", "still");
-            //             } else {
-            //                 $(this).attr("src", $(this).attr("data-animate"));
-            //                 $(this).attr("data-state", "animate");
-            //             }
-            //         });
-
-
-
-
-
-
-            //     })
-            // });
-            </script>
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -143,13 +51,23 @@
   </div>
 
 
+  <div class="card" style="width: 18rem;">
+    <img id="image" src="" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <a id="hi" href="" class="btn btn-primary">Invest!</a>
+    </div>
+  </div>
+
 
 
 
 
 
   <script src="assets/javascript/main.js"></script>
-  
+
 </body>
 
 </html>
