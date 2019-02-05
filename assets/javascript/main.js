@@ -1,8 +1,9 @@
 $(document).ready(function () {
-
+  
 
     $('#page2Container').hide();
     $('#page3Container').hide();
+    $("#page3Container2").hide()
 
 
   // Initialize Firebase
@@ -98,15 +99,21 @@ $(document).ready(function () {
       $("#image").attr("src", loga);
       $(".card-title").text(response.data[a].name)
       $(".card-text").text(response.data[a].symbol)
-      $("#hi").attr("src", response.data[a].urls.website);
-      console.log(response.data[a].urls.website)
+      $("#hi").attr("href", response.data[a].urls.website);
+      
+      // $("#hi").on("click", function() {
+      // window.location.href = response.data[a].urls.website;
 
+      // });
+
+      console.log(response.data[a].urls.website)
+ 
 
     });
 
   // });
 
-
+  
 
 
 
