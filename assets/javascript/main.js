@@ -1,17 +1,17 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 
     $('#page2Container').hide();
 
     // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyD74j796VyazU_qVmi6ehP2ilzjjYG6Tx8",
-      authDomain: "ucla-example-8388c.firebaseapp.com",
-      databaseURL: "https://ucla-example-8388c.firebaseio.com",
-      projectId: "ucla-example-8388c",
-      storageBucket: "ucla-example-8388c.appspot.com",
-      messagingSenderId: "1069772039049"
-    };
-    firebase.initializeApp(config);
+  var config = {
+    apiKey: "AIzaSyD74j796VyazU_qVmi6ehP2ilzjjYG6Tx8",
+    authDomain: "ucla-example-8388c.firebaseapp.com",
+    databaseURL: "https://ucla-example-8388c.firebaseio.com",
+    projectId: "ucla-example-8388c",
+    storageBucket: "ucla-example-8388c.appspot.com",
+    messagingSenderId: "1069772039049"
+  };
+  firebase.initializeApp(config);
 
     var database = firebase.database();
 
@@ -65,7 +65,7 @@
 
     
 
-  // });
+  });
 
 
  
