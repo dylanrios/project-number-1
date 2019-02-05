@@ -20,3 +20,16 @@ margin: auto;
     margin: auto;
     text-align: center;
 }
+
+#page3Container {
+    width: 325px;
+    margin-left: 25px;
+    border: solid 1px red;
+}
+.restaurant {
+    margin-left: 25px;
+    border: solid 1px teal;
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
