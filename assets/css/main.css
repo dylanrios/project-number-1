@@ -32,6 +32,7 @@ margin: auto;
     width: 325px;
     margin-left: 25px;
     border: solid 1px red;
+    float: left;
 }
 .restaurant {
     margin-left: 25px;
@@ -39,4 +40,22 @@ margin: auto;
     width: 300px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
+}
+
+#logInContainer {
+    margin: auto;
+    width: 300px;
+}
+
+#result {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: gold;
+    text-align: center;
+    color: maroon;
+    font-size: 20px;
+   
+}
+
+#page3Container2 {
+    float:left;
 }
