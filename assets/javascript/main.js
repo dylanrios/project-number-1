@@ -76,8 +76,14 @@ $(document).ready(function () {
       $('#page2Container').show();
 
     } else {
-      $result.text(email + " is not a valid email!");
-      $result.css("color", "red");
+      // $result.text(email + " is not a valid email!");
+      // $result.css("color", "red");
+      $(".modal").show();
+      // $('.modal').modal('toggle');
+      function a () {
+        $('.modal').hide();
+      }
+      setTimeout(a, 3000);
     }
     return false;
   }
