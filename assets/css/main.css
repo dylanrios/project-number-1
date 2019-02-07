@@ -31,12 +31,12 @@ margin: auto;
 #page3Container {
     width: 325px;
     margin-left: 25px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     float: left;
 }
 .restaurant {
     margin-left: 25px;
-    border: solid 1px teal;
+    /* border: solid 1px teal; */
     width: 300px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
@@ -58,4 +58,20 @@ margin: auto;
 
 #page3Container2 {
     float:left;
+}
+
+img {
+    
+    height: 150px;
+}
+
+
+#cardDisplay {
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card-image {
+    width: 400px;
 }
