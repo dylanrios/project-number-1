@@ -131,13 +131,13 @@ $(document).ready(function () {
       console.log(response);
       $('#page2Container').hide();
       $('#page3Container').show();
-      $('#page3Container2').show();
+      // $('#page3Container2').show();
 
       for (var i = 0; i < 10; i++) {
         console.log(response.businesses[i].name);
         var newDivRestaurants = $('<div class="restaurant">');
         // $(newDivRestaurants).append(response.businesses[i].name).append(response.businesses[i].price).append(response.businesses[i].rating).append('<img src=' + response.businesses[i].image_url + '></img>');
-        var restaurantCard = $(' <div class="col s12 m7" id="cardDisplay"> <div class="card horizontal"> <div class="card-image"> <img src=' + response.businesses[i].image_url +'> </div> <div class="card-stacked"> <div class="card-content"><h5 class="header">' + response.businesses[i].name + '</h5><p>' + response.businesses[i].rating +' , '+ response.businesses[i].price + '</p> </div> <div class="card-action"> <a href='+ response.businesses[i].url +'>More info</a> </div> </div> </div> </div>')
+        var restaurantCard = $(' <div class="col s12 m9" id="cardDisplay"> <div class="card horizontal"> <div class="card-image"> <img src=' + response.businesses[i].image_url +'> </div> <div class="card-stacked"> <div class="card-content"><h5 class="header">' + response.businesses[i].name + '</h5><p>' + response.businesses[i].rating +' , '+ response.businesses[i].price + '</p> </div> <div class="card-action"> <a href='+ response.businesses[i].url +'>More info</a> </div> </div> </div> </div>')
         $(newDivRestaurants).append(restaurantCard);
         
         $('#page3Container').append(newDivRestaurants);
@@ -154,6 +154,8 @@ $(document).ready(function () {
 
   // $('#hi').on('click', function () {
 
+  function b(){
+    $('#page3Container2').show();
   var a = Math.floor(Math.random() * 1500);
   var corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
   var queryURL = corsAnywhereUrl + "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info?id=" + a + "&CMC_PRO_API_KEY=e086943b-ef20-40d5-8fb0-bfbcb7bbbd53";
@@ -185,7 +187,14 @@ $(document).ready(function () {
 
 
   });
+  };
 
+  $("#page3Container").on("click", function(){
+   
+   b();
+  //  $('#page3Container2').show();
+
+  });
   // });
 
 
