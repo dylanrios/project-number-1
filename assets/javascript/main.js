@@ -30,6 +30,7 @@ $(document).ready(function () {
   $('#page2Container').hide();
   $('#page3Container').hide();
   $("#page3Container2").hide();
+  $('#cookie').hide();
 
 
   // Initialize Firebase
@@ -113,6 +114,9 @@ $(document).ready(function () {
 
 
   $('#submitButton2').on('click', function () {
+  
+  
+
     var userInput = $('#zipCodeInput').val().trim();
     var corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/'
     var queryUrl = corsAnywhereUrl + 'https://api.yelp.com/v3/businesses/search?location=' + userInput + '';
@@ -131,13 +135,13 @@ $(document).ready(function () {
       console.log(response);
       $('#page2Container').hide();
       $('#page3Container').show();
-      $('#page3Container2').show();
+      // $('#page3Container2').show();
 
       for (var i = 0; i < 10; i++) {
         console.log(response.businesses[i].name);
         var newDivRestaurants = $('<div class="restaurant">');
         // $(newDivRestaurants).append(response.businesses[i].name).append(response.businesses[i].price).append(response.businesses[i].rating).append('<img src=' + response.businesses[i].image_url + '></img>');
-        var restaurantCard = $(' <div class="col s12 m7" id="cardDisplay"> <div class="card horizontal"> <div class="card-image"> <img src=' + response.businesses[i].image_url +'> </div> <div class="card-stacked"> <div class="card-content"><h5 class="header">' + response.businesses[i].name + '</h5><p>' + response.businesses[i].rating +' , '+ response.businesses[i].price + '</p> </div> <div class="card-action"> <a href='+ response.businesses[i].url +'>More info</a> </div> </div> </div> </div>')
+        var restaurantCard = $(' <div class="col s12 m9" id="cardDisplay"> <div class="card horizontal"> <div class="card-image"> <img src=' + response.businesses[i].image_url +'> </div> <div class="card-stacked"> <div class="card-content"><h5 class="header">' + response.businesses[i].name + '</h5><p>' + response.businesses[i].rating +' , '+ response.businesses[i].price + '</p><p class="clickMe"><br> <i>Click Me For Crypto Fortune!</i></p> </div> <div class="card-action"> <a href='+ response.businesses[i].url +'>More info</a> </div> </div> </div> </div>')
         $(newDivRestaurants).append(restaurantCard);
         
         $('#page3Container').append(newDivRestaurants);
@@ -145,7 +149,8 @@ $(document).ready(function () {
 
 
     });//end of second ajax request
-  });//end of second ajax request
+    
+  });
 
 
   //end on click button2
@@ -153,6 +158,11 @@ $(document).ready(function () {
 
 
   // $('#hi').on('click', function () {
+
+  function b(){
+    
+    
+    
 
   var a = Math.floor(Math.random() * 1500);
   var corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
@@ -185,8 +195,23 @@ $(document).ready(function () {
 
 
   });
+  };
 
-  // });
+  $("#page3Container").on("click", function(){
+    b();
+    $('#cookie').show();
+   
+  
+
+  });
+
+  $('#cookie').on('click', function(){
+
+    $('#cookie').hide();
+    $('#page3Container2').show();
+    
+  });
+  
 
 
 
