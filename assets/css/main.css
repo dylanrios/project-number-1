@@ -19,6 +19,7 @@ margin: auto;
 #page2Container {
     margin: auto;
     text-align: center;
+    
 }
 
 #image {
@@ -74,4 +75,22 @@ img {
 
 .card-image {
     width: 400px;
+}
+
+.card-title{
+    text-align: center;
+
+}
+
+.card-text{
+text-align: center;
+}
+
+.cardhorizontal{
+    float: left;
+
+}
+.cardcontent{
+    float: right;
+
 }
