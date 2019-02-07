@@ -19,7 +19,7 @@ margin: auto;
 #page2Container {
     margin: auto;
     text-align: center;
-    background-color: bisque;
+    
 }
 
 #image {
@@ -32,24 +32,65 @@ margin: auto;
 #page3Container {
     width: 325px;
     margin-left: 25px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
+    float: left;
 }
 .restaurant {
     margin-left: 25px;
-    border: solid 1px teal;
+    /* border: solid 1px teal; */
     width: 300px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
-.jumbotron {
-    background-image:url("assets/images/logo.jpg");
-    height:300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom:1px solid #ff6a00
-  }
-  .jumbotron .container {
-    position:relative;
-    top:50px;
-  }
-  
+
+#logInContainer {
+    margin: auto;
+    width: 300px;
+}
+
+#result {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: gold;
+    text-align: center;
+    color: maroon;
+    font-size: 20px;
+   
+}
+
+#page3Container2 {
+    float:left;
+}
+
+img {
+    
+    height: 150px;
+}
+
+
+#cardDisplay {
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card-image {
+    width: 400px;
+}
+
+.card-title{
+    text-align: center;
+
+}
+
+.card-text{
+text-align: center;
+}
+
+.cardhorizontal{
+    float: left;
+
+}
+.cardcontent{
+    float: right;
+
+}

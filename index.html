@@ -4,46 +4,82 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Quench</title>
+  <title>Lunch 'N Learn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="/images/icon"/>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__{LANGUAGE_CODE}.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth.css" />
 
 </head>
 
 <body>
-
-  
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Lunch n' Learn</h1>
+      <h1 class="display-4">Lunch 'n Learn</h1>
       <p class="lead">Fortune cookies for the Crypto Investor</p>
     </div>
   </div>
 
+<!-- ////////////////// -->
+  <!-- Button to Open the Modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button> -->
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Please input a valid email.
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /////////////////// -->
+
+  <!-- <div id='logInContainer'>
+  <form>
+    <p>Enter an email address:</p>
+    <input id='email'>
+    <button type='submit' id='validate'>Submit</button>
+  </form>
+
+  <h2 id='result'></h2>
+  </div> -->
 
   <div id='logInContainer'>
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
-      <button type="submit" id='submitButton' class="btn btn-primary">Submit</button>
+      <button type="submit" id='validate' class="btn btn-primary">Submit</button>
     </form>
+    <h2 id='result'></h2>
   </div>
+
+  
 
   <!-- "Page 2" Begins! -->
   <div id='page2Container'>
@@ -59,10 +95,10 @@
   </div>
   <div id='page3Container2'>
     <!-- This is where our Coin API will render data  -->
-    <div class="card" style="width: 30rem;">
-      <img id="image" src="" class="card-img-top" alt="...">
+    <div class="card" style="width: 18rem;">
+      <img id="image" src="" class="card-img-top" alt="bitcoin" style="width:64px;height:64px;">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title" text-align="center">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
         <a id="hi" href="" class="btn btn-primary">Invest!</a>
@@ -72,8 +108,10 @@
 
 
 
+
+
   <script src="assets/javascript/main.js"></script>
-  
+
 
 </body>
 
