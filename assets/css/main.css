@@ -83,14 +83,17 @@ img {
 }
 
 .card-text{
-text-align: center;
+    text-align: center;
 }
 
-.cardhorizontal{
-    float: left;
-
+.jumbotron {
+    margin: 20px;
+    background-image: url('../images/banner.png');    
+    background-position: center;
 }
-.cardcontent{
-    float: right;
 
+.lead{
+    text-align: center;
+    
+    font-style: bold;
 }
