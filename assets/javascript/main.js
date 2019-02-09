@@ -200,7 +200,7 @@ $(document).ready(function () {
   $("#page3Container").on("click", function(){
     b();
     $('#cookie').show();
-   
+   $('#page3Container2').hide();
   
 
   });
