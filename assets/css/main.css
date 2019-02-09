@@ -97,10 +97,12 @@ img {
     background-position: center;
 }
 
-.lead{
+.lead {
     text-align: center;
-    
+    color: white;
     font-style: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 
